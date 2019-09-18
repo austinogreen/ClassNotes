@@ -1,0 +1,22 @@
+Sorting
+	In place sorting
+		does not require any extra working storage
+		Useful for large amounts
+	Internal Sorting
+		all keys kept in main mem
+		Counting
+			Determine rank of key k
+			Can iterate over all keys
+			Compare to all keys but itself (N^2 - N)
+			Compare 2 keys and increment larger one
+		Insertion
+			Compare right to left, moving to its correct slot
+			One iteration gets one element in right place
+			Start with index 1, because don't need to compare item 0 with itself
+			Can do binary search on sorted part of the list
+			Both have O(n^2) data movements
+			But binary insertion sort has O(nlogn) vs. O(n^2) comparisons for regular
+		Exchanges
+		Merging (Merge sort)
+		Distribution (Radix sort)
+		(Only first 4 on 1st exam)

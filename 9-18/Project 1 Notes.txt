@@ -1,0 +1,5 @@
+Project 1
+	Use binary search for sorted data
+	Linear search for unsorted data
+
+	For sort, use the comparitor to tell order
