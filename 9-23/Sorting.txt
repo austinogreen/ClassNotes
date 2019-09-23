@@ -1,0 +1,10 @@
+Sorting cases
+	If already sorted
+		neither need to insert
+		For comparisons
+			binary does logn searches
+			insertion does 1 search
+				Looks at previous and if greater than nothing done
+		Insertion outperforms binary in this case
+		Insertion sort generally better if partially sorted
+

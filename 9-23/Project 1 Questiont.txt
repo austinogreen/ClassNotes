@@ -1,0 +1,4 @@
+Start with file read loop
+	User interaction loop
+		if output asks for file name
+			Output to file name or stdout if none
