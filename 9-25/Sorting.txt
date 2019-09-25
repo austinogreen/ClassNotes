@@ -1,0 +1,28 @@
+Adaptive Sort
+	Checks to see if elements are sorted first
+	p-sorted - all pairs of keys in position i & j, j - i <= p
+		Gives an estimation of how nearly an array is sorted
+		0-sorted is completely sorted
+		1-sorted is only unsorted in elements next to each other
+	p-sorted completity is O(Nlogp)
+	p can be at most N -> maximum complexity is NlogN
+	when p is small -> linear time sorted
+	Split keys into odds and evens
+		Recursively sort
+		p is number of splits
+	Print Complexity Chart
+	Stable means that original order is preserved if they keys are the same
+	Inplace doesn't require addional space
+Shell Sort
+	Shift the list a lot, then recersively shorter until sorted
+	Don't compare items next to each other but in some increment
+		This is called (increment)-sort
+	Then we can call 1-sort (insertion sort)
+	Want to do a N-sort, depends on the size of the array
+		N is gap/interval size
+	Knuth gap sequence
+		start with h=1
+		h = 3*h +1 
+		until gap larger than the array
+	Complexity is complicated
+	

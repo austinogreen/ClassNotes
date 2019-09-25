@@ -1,0 +1,10 @@
+Automatically Graded Question
+	T/F
+	Multiple Choice
+	Fill in the blank
+		Quicksort
+			What is array going to look like for each recursive call
+Bring pensil and paper
+Psudo Code
+Big O
+Previous years exam

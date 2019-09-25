@@ -1,0 +1,52 @@
+Sorting cases
+	If already sorted
+		neither need to insert
+		For comparisons
+			binary does logn searches
+			insertion does 1 search
+				Looks at previous and if greater than nothing done
+		Insertion outperforms binary in this case
+		Insertion sort generally better if partially sorted
+
+Quicksort
+	Steps involved:
+		Pivot value choice
+			first value is pivot value
+		Partition step 
+			Shifts values larger than pivot A to the right
+			shifts values smaller than pivot A on the left
+			A sorted
+			Only have to compare elements on each side to eachother
+
+		If left < right
+			pivot <-A[left]
+			i <- left
+			j <- right +1
+			Do
+				Do
+					i <- i+1
+				While (i <A.size) && (A[i]< pivot)
+				Do
+					j <- j-1
+				Whlie (A[j] > pivot)
+				if (i < j)
+					swap (A[i],A[j])
+			While (i < j)
+			swap (A[left],A[j])
+
+			quicksort (A, left, j-1)
+			quicksort (A, j+1, right)
+
+		i finds things less than the pivot
+		j finds things greater than the pivot
+		Split it in half & recursive calls logn times
+		O(nlogn) time complexity on average
+		O(n^2) at worse case
+
+		-> set pivot at size/2
+		Can use for program one
+
+Lower Bound for Sorting
+	nlogn is best case for comparisons
+
+
